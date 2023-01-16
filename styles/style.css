@@ -1,0 +1,122 @@
+ /* *{
+    margin: 0;
+ } */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); 
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+ }
+
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+}
+ .top-players{
+    margin-bottom: 30px;
+ }
+.section-title{
+    color:#562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+    border: 1px solid  #D1D1D1;
+    ;
+}
+/* top blog */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px ;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: 
+    #562EFF;
+    font-size: 16px;
+}
+
+/* latest course  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+
+}
+.courses .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.fa-star{
+    font-size: 16px;
+}
+.fa-star.filled{
+    color: #58ff2e;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+/* media queries  */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+        padding: 0%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+}
